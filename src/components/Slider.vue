@@ -71,6 +71,7 @@ export default {
 
 .slider__racer {
   display: flex;
+  transition: all ease .2s;
 }
 
 .slider__btn {
