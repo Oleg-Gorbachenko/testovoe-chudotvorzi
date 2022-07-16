@@ -10,7 +10,7 @@
             :itemData="item"
         />
       </div>
-      <p class="main__description_text">{{ sliderData[currentSlideIndex].description }}</p>
+      <p class="slider__description">{{ sliderData[currentSlideIndex].description }}</p>
     </div>
     <div class="slider__btn" @click="nextSlide">
       <div class="arrow">
@@ -103,7 +103,7 @@ export default {
   z-index: 2;
 }
 
-.main__description_text {
+.slider__description {
   position: absolute;
   font-size: 20px;
   line-height: 32px;
@@ -119,7 +119,7 @@ export default {
 }
 
 @media screen and (max-width: 1302px) and (max-height: 801px) {
-  .main__description_text {
+  .slider__description {
     font-size: 14px;
     line-height: 15px;
   }
