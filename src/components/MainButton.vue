@@ -26,7 +26,7 @@ export default {
   box-shadow: 0 5px 26px rgba(11, 75, 92, 0.0975713);
   border-radius: 8px;
   border: none;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 
 .button__name {

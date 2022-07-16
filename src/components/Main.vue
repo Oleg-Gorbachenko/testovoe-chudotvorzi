@@ -6,12 +6,7 @@
     </div>
     <Slider :sliderData="sliderItems"/>
     <div class="main__description">
-      <div class="main__description_block">
-        <p class="main__description_text">Для примера мы показали вам его лицо. В первой серии он прячется в подвале за
-          мониторами, и пусть борода не
-          собьёт вас с толку. Найдите героя и нажмите на паузу — ему не терпится отдать вам промокод.</p>
-        <MainButton/>
-      </div>
+      <MainButton/>
     </div>
     <img class="cloud" src="../common/images/cloud.png" alt="cloud">
   </div>
@@ -29,12 +24,42 @@ export default {
   data() {
     return {
       sliderItems: [
-        {id: 1, name: 'img1', img: "1.png"},
-        {id: 2, name: 'img2', img: "2.png"},
-        {id: 3, name: 'img3', img: "3.png"},
-        {id: 4, name: 'img4', img: "4.png"},
-        {id: 5, name: 'img5', img: "5.png"},
-        {id: 6, name: 'img6', img: "6.png"},
+        {
+          id: 1,
+          name: 'img1',
+          img: "1.png",
+          description: 'Для примера мы показали вам его лицо. В первой серии он прячется в подвале за мониторами, и пусть борода не собьёт вас с толку. Найдите героя и нажмите на паузу — ему не терпится отдать вам промокод.'
+        },
+        {
+          id: 2,
+          name: 'img2',
+          img: "2.png",
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto aut beatae deleniti dolorum eius, eos esse explicabo, laudantium odio odit placeat porro!'
+        },
+        {
+          id: 3,
+          name: 'img3',
+          img: "3.png",
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto aut beatae deleniti dolorum eius, eos esse explicabo'
+        },
+        {
+          id: 4,
+          name: 'img4',
+          img: "4.png",
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto aut beatae deleniti dolorum eius'
+        },
+        {
+          id: 5,
+          name: 'img5',
+          img: "5.png",
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto aut beatae'
+        },
+        {
+          id: 6,
+          name: 'img6',
+          img: "6.png",
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto aut beatae deleniti dolorum eius, eos esse explicabo, laudantium odio odit placeat porro'
+        },
       ]
     }
   },
@@ -74,24 +99,6 @@ export default {
   align-items: center;
 }
 
-.main__description_block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-}
-
-.main__description_text {
-  position: relative;
-  font-size: 20px;
-  line-height: 32px;
-  font-family: kinopoiskLight, sans-serif;
-  z-index: 21;
-  text-align: center;
-  max-width: 80%;
-}
-
 .cloud {
   position: absolute;
   bottom: 0;
@@ -103,15 +110,6 @@ export default {
   .main__title {
     font-size: 30px;
     margin: 10px 0;
-  }
-
-  .main__description_text {
-    font-size: 14px;
-    line-height: 15px;
-  }
-
-  .main__description_block {
-    bottom: 50px;
   }
 }
 

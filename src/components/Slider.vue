@@ -10,6 +10,7 @@
             :itemData="item"
         />
       </div>
+      <p class="main__description_text">{{ sliderData[currentSlideIndex].description }}</p>
     </div>
     <div class="slider__btn" @click="nextSlide">
       <div class="arrow">
@@ -101,4 +102,25 @@ export default {
   z-index: 2;
 }
 
+.main__description_text {
+  position: absolute;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: kinopoiskLight, sans-serif;
+  z-index: 21;
+  text-align: center;
+  max-width: 80%;
+  right: 10%;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1302px) and (max-height: 801px) {
+  .main__description_text {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
 </style>
